@@ -35,6 +35,7 @@ public class SingleSignOutFilter1 implements Filter {
 			session.removeAttribute(AbstractCasFilter.CONST_CAS_ASSERTION);
 			//session.invalidate();
 
+
 		}
 
 		
