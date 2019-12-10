@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ValidatorApp
+  cas:
+    assertion-filters: /*
+    auth-filters: /*
+    cas-server-login-url: https://auth.fmcc.cldc.test.com/authui/login
+    cas-server-url-prefix: https://auth.fmcc.cldc.test.com/authui
+    cas-server-logout-url: https://auth.fmcc.cldc.test.com/authui/logout
+    redirect-after-validation: true
+    request-wrapper-filters: /*
+    server-name: http://10.47.181.202:8081
+    sign-out-filters: /demo/logout
+    use-session: true
+    validate-filters: /*
+    hostnameVerifier: org.jasig.cas.client.ssl.AnyHostnameVerifier
+cas:
+   logout:
+     followServiceRedirects: true
